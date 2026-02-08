@@ -152,7 +152,7 @@ h3 {
 }
 
 .logo-img {
-    height: 70px;
+    height: 95px;
     width: auto;
     filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
     transition: transform var(--transition-fast);
@@ -204,9 +204,9 @@ h3 {
 /* Intense Glow on Hover */
 .nav-link:hover {
     text-shadow:
-        0 0 10px var(--pink-glow),
         0 0 20px var(--pink-glow),
-        0 0 30px var(--pink-glow);
+        0 0 30px var(--pink-glow),
+        0 0 40px var(--pink-glow);
     color: var(--white);
 }
 
@@ -317,47 +317,216 @@ h3 {
     overflow: hidden;
 }
 
+/* =============================================
+   SPANISH REVIVAL HERO BORDER
+   ============================================= */
+
+/* Wrapper stays as-is, we decorate the frame */
+.hero {
+    padding: var(--space-xl) var(--space-lg);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Ornate Spanish Revival frame */
 .hero-frame {
     max-width: 1100px;
     margin: 0 auto;
     position: relative;
     padding: 80px 60px 40px;
-    /* Ornate Stained Glass Frame as background */
     background:
-        url('images/ornate-frame.png') top center / 100% auto no-repeat,
+        /* Top Talavera-style stripe */
+        linear-gradient(
+            90deg,
+            var(--turquoise) 0,
+            var(--turquoise) 12.5%,
+            var(--terracotta) 12.5%,
+            var(--terracotta) 25%,
+            var(--pink) 25%,
+            var(--pink) 37.5%,
+            var(--turquoise) 37.5%,
+            var(--turquoise) 50%,
+            var(--terracotta) 50%,
+            var(--terracotta) 62.5%,
+            var(--pink) 62.5%,
+            var(--pink) 75%,
+            var(--turquoise) 75%,
+            var(--turquoise) 87.5%,
+            var(--terracotta) 87.5%,
+            var(--terracotta) 100%
+        ) top center / 100% 22px no-repeat,
+        /* Bottom Talavera-style stripe */
+        linear-gradient(
+            90deg,
+            var(--pink) 0,
+            var(--pink) 12.5%,
+            var(--turquoise) 12.5%,
+            var(--turquoise) 25%,
+            var(--terracotta) 25%,
+            var(--terracotta) 37.5%,
+            var(--pink) 37.5%,
+            var(--pink) 50%,
+            var(--turquoise) 50%,
+            var(--turquoise) 62.5%,
+            var(--terracotta) 62.5%,
+            var(--terracotta) 75%,
+            var(--pink) 75%,
+            var(--pink) 87.5%,
+            var(--turquoise) 87.5%,
+            var(--turquoise) 100%
+        ) bottom center / 100% 22px no-repeat,
         var(--cream);
     min-height: 600px;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+    border-radius: var(--radius-lg);
+    border: 6px solid var(--terracotta-dark);
+    outline: 4px solid var(--turquoise);
+    outline-offset: 10px;
 }
 
-/* Bell top with ¡Bienvenido! */
+/* Bell top label preserved but visually integrated */
 .hero-frame::before {
     content: '¡Bienvenido!';
     position: absolute;
-    top: 20px;
+    top: -32px;
     left: 50%;
     transform: translateX(-50%);
-    padding: 8px 40px;
-    background: rgba(248, 235, 158, 0.95);
-    border-radius: 30px;
+    padding: 10px 48px;
+    background: radial-gradient(circle at 50% 0, var(--pink-glow), var(--terracotta));
+    border-radius: 40px;
     font-family: var(--font-display);
     font-size: 1.4rem;
     font-weight: 600;
-    color: var(--terracotta);
+    color: var(--cream);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    border: 3px solid var(--cream);
+    box-shadow: var(--shadow-medium);
     z-index: 10;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-/* No after pseudo element needed */
-.hero-frame::after {
-    display: none;
-}
-
+/* Remove old image-based frame if present */
 .stained-glass-border {
     background: transparent;
     padding: 0;
     position: relative;
     z-index: 1;
+}
+
+/* Corner medallions – Spanish Revival / Talavera nod */
+.hero-frame::after {
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    inset: 18px;
+    border-radius: calc(var(--radius-lg) - 4px);
+    background:
+        /* top-left */
+        radial-gradient(circle at 0 0,
+            var(--pink) 0,
+            var(--pink) 10px,
+            var(--turquoise) 10px,
+            var(--turquoise) 18px,
+            transparent 18px
+        ),
+        /* top-right */
+        radial-gradient(circle at 100% 0,
+            var(--turquoise) 0,
+            var(--turquoise) 10px,
+            var(--terracotta) 10px,
+            var(--terracotta) 18px,
+            transparent 18px
+        ),
+        /* bottom-left */
+        radial-gradient(circle at 0 100%,
+            var(--terracotta) 0,
+            var(--terracotta) 10px,
+            var(--pink) 10px,
+            var(--pink) 18px,
+            transparent 18px
+        ),
+        /* bottom-right */
+        radial-gradient(circle at 100% 100%,
+            var(--turquoise) 0,
+            var(--turquoise) 10px,
+            var(--pink) 10px,
+            var(--pink) 18px,
+            transparent 18px
+        );
+    z-index: 0;
+}
+
+/* Inner scalloped edge – subtle Spanish arch feeling */
+.hero-frame-inner-border {
+    position: absolute;
+    inset: 40px 32px;
+    border-radius: var(--radius-md);
+    pointer-events: none;
+    background:
+        radial-gradient(circle at 50% 0,
+            var(--turquoise) 9px,
+            transparent 10px
+        ) top center / 30px 20px repeat-x,
+        radial-gradient(circle at 50% 100%,
+            var(--terracotta) 9px,
+            transparent 10px
+        ) bottom center / 30px 20px repeat-x;
+    opacity: 0.75;
+    z-index: 0;
+}
+
+/* Ensure hero content floats above decorative layers */
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* If you want to auto-inject the inner border without extra HTML */
+.hero-frame::marker {
+    /* no-op: pseudo reserved, using helper below */
+}
+
+/* Optional: helper class for JS/HTML injection */
+.hero-frame-border-layer {
+    position: absolute;
+    inset: 0;
+}
+
+/* =============================================
+   MOBILE TWEAKS FOR BORDER
+   ============================================= */
+@media (max-width: 768px) {
+    .hero {
+        padding: var(--space-2xl) var(--space-sm);
+    }
+
+    .hero-frame {
+        padding: 70px 24px 32px;
+        outline-offset: 6px;
+        min-height: 520px;
+        background-size:
+            100% 16px,
+            100% 16px,
+            auto;
+    }
+
+    .hero-frame::before {
+        top: -40px;
+        font-size: 1.1rem;
+        padding: 8px 32px;
+    }
+
+    .hero-frame::after {
+        inset: 16px;
+    }
+
+    .hero-frame-inner-border {
+        inset: 32px 20px;
+        background-size:
+            24px 18px,
+            24px 18px;
+    }
+}
+
 }
 
 .hero-content {
