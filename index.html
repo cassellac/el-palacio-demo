@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="El Palacio Mexican Restaurant - Historic Route 66 dining in the heart of Kingman, Arizona since 1888. Authentic Mexican cuisine in the historic Luthy Block.">
+    <title>El Palacio | Mexican Restaurant on Historic Route 66 | Kingman, AZ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Outfit:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="site-header" id="header">
+        <div class="header-container">
+            <a href="#" class="logo-link" aria-label="El Palacio Home">
+                <img src="images/Primary Logo.png" alt="El Palacio Parrot Logo" class="logo-img">
+            </a>
+            <!-- Language Switcher -->
+            <div class="language-switcher">
+                <button id="lang-en" class="lang-btn active" onclick="toggleLanguage('en')">EN</button>
+                <button id="lang-es" class="lang-btn" onclick="toggleLanguage('es')">ES</button>
+            </div>
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="#welcome" class="nav-link" data-en="History" data-es="Historia">History</a></li>
+                    <li><a href="#featured-items" class="nav-link" data-en="Menu" data-es="Menú">Menu</a></li>
+                    <li><a href="#footer" class="nav-link" data-en="Visit" data-es="Visítanos">Visit</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero" id="hero">
+            <div class="hero-frame">
+                <div class="stained-glass-border">
+                    <div class="hero-content">
+                        <div class="hero-links">
+                            <a href="#featured-items" class="hero-link" data-en="Menu" data-es="Menú">Menu</a>
+                            <a href="#welcome" class="hero-link" data-en="Our Story" data-es="Nuestra Historia">Our
+                                Story</a>
+                        </div>
+                        <div class="hero-split">
+                            <div class="hero-building">
+                                <img src="images/el_palacio_interpretation.png"
+                                    alt="El Palacio Restaurant - Historic Spanish Revival building on Route 66"
+                                    class="building-img">
+                            </div>
+                            <div class="hero-food">
+                                <img src="images/el_bandido_burrito_1770500341816.png"
+                                    alt="The famous El Bandido Burrito - smothered in red chile" class="food-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile Talavera Stripes (visible on mobile only) -->
+            <div class="talavera-stripe talavera-top"></div>
+            <div class="talavera-stripe talavera-bottom"></div>
+        </section>
+
+        <!-- WELCOME MESSAGE -->
+        <section class="welcome" id="welcome">
+            <div class="welcome-content">
+                <h1 class="welcome-heading" data-en="Welcome to El Palacio" data-es="Bienvenido a El Palacio">Welcome to
+                    El Palacio</h1>
+                <p class="welcome-text"
+                    data-en="For generations, our doors have been open to travelers, families, and friends seeking a taste of authentic Mexican hospitality. Nestled within the historic 1888 Luthy Block on legendary Route 66, El Palacio is more than a restaurant—it's a gathering place where warm meals and warmer welcomes create memories that last a lifetime. Pull up a chair, you're family here."
+                    data-es="Durante generaciones, nuestras puertas han estado abiertas para viajeros, familias y amigos que buscan un sabor de auténtica hospitalidad mexicana. Ubicado dentro del histórico Luthy Block de 1888 en la legendaria Ruta 66, El Palacio es más que un restaurante—es un lugar de reunión donde las comidas cálidas y las bienvenidas más cálidas crean recuerdos que duran toda la vida. Acércate una silla, eres familia aquí.">
+                    For generations, our doors have been open to travelers, families, and friends seeking a taste of
+                    authentic Mexican hospitality.
+                    Nestled within the historic 1888 Luthy Block on legendary Route 66, El Palacio is more than a
+                    restaurant—it's a gathering place
+                    where warm meals and warmer welcomes create memories that last a lifetime. Pull up a chair, you're
+                    family here.
+                </p>
+            </div>
+        </section>
+
+        <!-- PARROT DIVIDER (Flying Logo) -->
+        <div class="parrot-divider">
+            <div class="divider-line"></div>
+            <img src="images/Flying Logo.png" alt="El Palacio flying parrot mascot" class="parrot-flying">
+            <div class="divider-line"></div>
+        </div>
+
+        <!-- FEATURED ITEMS -->
+        <section class="featured-items" id="featured-items">
+            <h2 class="section-title" data-en="Favorites from Our Kitchen" data-es="Favoritos de Nuestra Cocina">
+                Favorites from Our Kitchen</h2>
+            <div class="featured-grid">
+                <!-- Item 1 -->
+                <article class="featured-card mission-arch-frame">
+                    <div class="card-image-wrapper">
+                        <img src="images/el_bandido_burrito_1770500341816.png" alt="El Bandido Burrito"
+                            class="card-img">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">El Bandido Burrito</h3>
+                        <p class="card-description"
+                            data-en="Our legendary burrito smothered in rich red chile, topped with melted cheese and served with rice and beans."
+                            data-es="Nuestro legendario burrito cubierto en rico chile rojo, con queso derretido y servido con arroz y frijoles.">
+                            Our legendary burrito smothered in rich red chile, topped with
+                            melted cheese and served with rice and beans.</p>
+                    </div>
+                </article>
+                <!-- Item 2 -->
+                <article class="featured-card mission-arch-frame">
+                    <div class="card-image-wrapper">
+                        <img src="images/sopapillas_1770500357388.png" alt="Golden Sopapillas with honey"
+                            class="card-img">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Sopapillas</h3>
+                        <p class="card-description"
+                            data-en="Golden pillows of fried dough, dusted with powdered sugar and drizzled with local desert honey."
+                            data-es="Almohadas doradas de masa frita, espolvoreadas con azúcar glass y rociadas con miel del desierto local.">
+                            Golden pillows of fried dough, dusted with powdered sugar and
+                            drizzled with local desert honey.</p>
+                    </div>
+                </article>
+                <!-- Item 3 -->
+                <article class="featured-card mission-arch-frame">
+                    <div class="card-image-wrapper">
+                        <img src="images/tacos_plate_1770500372347.png" alt="Street-style carne asada tacos"
+                            class="card-img">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Street Tacos</h3>
+                        <p class="card-description"
+                            data-en="Authentic carne asada on handmade corn tortillas with fresh cilantro, onion, and salsa verde."
+                            data-es="Auténtica carne asada en tortillas de maíz hechas a mano con cilantro fresco, cebolla y salsa verde.">
+                            Authentic carne asada on handmade corn tortillas with fresh
+                            cilantro, onion, and salsa verde.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- PRIMARY CTA (Walking Logo) -->
+        <section class="cta-section" id="cta">
+            <div class="desert-horizon">
+                <div class="cta-content">
+                    <img src="images/Walking Logo.png" alt="Walking parrot" class="cta-parrot">
+                    <a href="#" class="cta-button" data-en="Order Online" data-es="Ordenar en Línea">Order Online</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- DAILY SPECIAL -->
+        <section class="daily-special" id="daily-special">
+            <div class="special-frame mission-arch-frame">
+                <span class="special-badge" data-en="Today's Special" data-es="Especial del Día">Today's Special</span>
+                <h2 class="special-headline">¡Oye, Amigos! The Chef's Got Something Special!</h2>
+                <p class="special-description"
+                    data-en="Try our Enchiladas Suizas today—tender chicken wrapped in corn tortillas, bathed in creamy tomatillo sauce, and topped with queso fresco. Served with cilantro lime rice. Available while supplies last!"
+                    data-es="Prueba nuestras Enchiladas Suizas hoy—pollo tierno envuelto en tortillas de maíz, bañado en salsa cremosa de tomatillo, y cubierto con queso fresco. Servido con arroz de cilantro y limón. ¡Disponible mientras duren las existencias!">
+                    Try our Enchiladas Suizas today—tender chicken wrapped in corn tortillas,
+                    bathed in creamy tomatillo sauce, and topped with queso fresco. Served with
+                    cilantro lime rice. Available while supplies last!
+                </p>
+                <a href="#featured-items" class="btn-outline" data-en="See Full Menu" data-es="Ver Menú Completo">See
+                    Full Menu</a>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS -->
+        <section class="testimonials" id="testimonials">
+            <h2 class="section-title" data-en="What Our Guests Say" data-es="Lo Que Dicen Nuestros Invitados">What Our
+                Guests Say</h2>
+            <div class="testimonials-grid">
+                <article class="testimonial-card mission-arch-frame">
+                    <blockquote class="testimonial-quote"
+                        data-en="We stop at El Palacio every time we drive Route 66. The food is incredible and the atmosphere takes you back in time. A true gem!"
+                        data-es="Paramos en El Palacio cada vez que manejamos por la Ruta 66. La comida es increíble y el ambiente te transporta en el tiempo. ¡Una verdadera joya!">
+                        "We stop at El Palacio every time we drive Route 66. The food is incredible and the atmosphere
+                        takes you back in time. A true gem!"
+                    </blockquote>
+                    <cite class="testimonial-author">— Maria & Carlos, Phoenix</cite>
+                </article>
+                <article class="testimonial-card mission-arch-frame">
+                    <blockquote class="testimonial-quote"
+                        data-en="Best Mexican food I've had outside of my abuela's kitchen. The sopapillas are heavenly. This place is special."
+                        data-es="La mejor comida mexicana que he probado fuera de la cocina de mi abuela. Las sopapillas son celestiales. Este lugar es especial.">
+                        "Best Mexican food I've had outside of my abuela's kitchen. The sopapillas are heavenly. This
+                        place is special."
+                    </blockquote>
+                    <cite class="testimonial-author">— David R., Flagstaff</cite>
+                </article>
+                <article class="testimonial-card mission-arch-frame">
+                    <blockquote class="testimonial-quote"
+                        data-en="The Bandido Burrito is legendary for a reason! My family has been coming here for years. El Palacio feels like home."
+                        data-es="¡El Burrito Bandido es legendario por una razón! Mi familia ha venido aquí por años. El Palacio se siente como en casa.">
+                        "The Bandido Burrito is legendary for a reason! My family has been coming here for years. El
+                        Palacio feels like home."
+                    </blockquote>
+                    <cite class="testimonial-author">— The Martinez Family, Kingman</cite>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer" id="footer">
+        <div class="footer-container">
+            <!-- Napping Logo on Left -->
+            <div class="footer-section">
+                <img src="images/Napping Logo.png" alt="El Palacio napping parrot" class="footer-napping-logo">
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-heading" data-en="Hours" data-es="Horario">Hours</h3>
+                <ul class="footer-list">
+                    <li><span class="talavera-bullet"></span><span data-en="Monday – Thursday: 11am – 9pm"
+                            data-es="Lunes – Jueves: 11am – 9pm">Monday – Thursday: 11am – 9pm</span></li>
+                    <li><span class="talavera-bullet"></span><span data-en="Friday – Saturday: 11am – 10pm"
+                            data-es="Viernes – Sábado: 11am – 10pm">Friday – Saturday: 11am – 10pm</span></li>
+                    <li><span class="talavera-bullet"></span><span data-en="Sunday: 10am – 8pm"
+                            data-es="Domingo: 10am – 8pm">Sunday: 10am – 8pm</span></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-heading" data-en="Location" data-es="Ubicación">Location</h3>
+                <ul class="footer-list">
+                    <li><span class="talavera-bullet"></span>401 E Andy Devine Ave</li>
+                    <li><span class="talavera-bullet"></span>Kingman, AZ 86401</li>
+                    <li><span class="talavera-bullet"></span><span data-en="Historic Luthy Block, Est. 1888"
+                            data-es="Histórico Luthy Block, Est. 1888">Historic Luthy Block, Est. 1888</span></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-heading" data-en="Contact" data-es="Contacto">Contact</h3>
+                <ul class="footer-list">
+                    <li><span class="talavera-bullet"></span><span data-en="Phone:" data-es="Teléfono:">Phone:</span>
+                        (928) 718-0018</li>
+                    <li><span class="talavera-bullet"></span>Email: hola@elpalacio.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="copyright">© 2026 El Palacio Mexican Restaurant. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script>
+        // =============================================
+        // LANGUAGE CONTROLLER
+        // =============================================
+        class LanguageController {
+            constructor() {
+                this.currentLang = localStorage.getItem('language') || 'en';
+                this.init();
+            }
+
+            init() {
+                this.updateContent(this.currentLang);
+                this.updateUI(this.currentLang);
+                this.updatePageLang(this.currentLang);
+            }
+
+            updateContent(lang) {
+                const elements = document.querySelectorAll('[data-en][data-es]');
+                elements.forEach(el => {
+                    const content = el.getAttribute(`data-${lang}`);
+                    if (content) {
+                        if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+                            el.placeholder = content;
+                        } else {
+                            el.textContent = content;
+                        }
+                    }
+                });
+            }
+
+            updateUI(lang) {
+                const buttons = document.querySelectorAll('[id^="lang-"]');
+                buttons.forEach(btn => btn.classList.remove('active'));
+                const activeBtn = document.getElementById(`lang-${lang}`);
+                if (activeBtn) {
+                    activeBtn.classList.add('active');
+                }
+            }
+
+            updatePageLang(lang) {
+                document.documentElement.lang = lang;
+            }
+
+            toggleLanguage(lang) {
+                this.currentLang = lang;
+                localStorage.setItem('language', lang);
+                this.updateContent(lang);
+                this.updateUI(lang);
+                this.updatePageLang(lang);
+            }
+        }
+
+        let languageController;
+
+        document.addEventListener('DOMContentLoaded', () => {
+            languageController = new LanguageController();
+        });
+
+        function toggleLanguage(lang) {
+            if (languageController) {
+                languageController.toggleLanguage(lang);
+            }
+        }
+
+        // =============================================
+        // SMOOTH SCROLL
+        // =============================================
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // =============================================
+        // BACK TO TOP BUTTON
+        // =============================================
+        const backToTopBtn = document.getElementById('backToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.add('visible');
+            } else {
+                backToTopBtn.classList.remove('visible');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // =============================================
+        // ACTIVE NAV ON SCROLL
+        // =============================================
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (scrollY >= sectionTop - 100) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

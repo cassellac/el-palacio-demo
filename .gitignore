@@ -1,0 +1,8 @@
+# Large files
+*.m4a
+*.pdf
+assets/design elements/infographs/
+assets/design elements/The_Shapeshifting_Luthy_Block_on_Route_66*
+
+# OS files
+.DS_Store
