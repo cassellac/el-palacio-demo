@@ -16,7 +16,7 @@
     <style>
         /* =============================================
            EL PALACIO - HERITAGE DESIGN SYSTEM
-           "The Digital Luthy Block" - Version 2.2 (Button Style Label)
+           "The Digital Luthy Block" - Version 2.3 (Footer Update)
            ============================================= */
 
         /* =============================================
@@ -262,8 +262,8 @@
         /* =============================================
            BUTTONS
            ============================================= */
+        /* Primary Button Group */
         .btn-primary,
-        .cta-button,
         .hero-link:first-child {
             display: inline-block;
             font-family: var(--font-ui);
@@ -286,7 +286,6 @@
         }
 
         .btn-primary:hover,
-        .cta-button:hover,
         .hero-link:first-child:hover {
             background: transparent;
             color: var(--terracotta);
@@ -294,8 +293,10 @@
             box-shadow: none;
         }
 
+        /* Secondary Button Group - Now includes CTA button for better contrast */
         .btn-secondary,
         .btn-outline,
+        .cta-button,
         .hero-link:last-child {
             display: inline-block;
             font-family: var(--font-ui);
@@ -318,6 +319,7 @@
 
         .btn-secondary:hover,
         .btn-outline:hover,
+        .cta-button:hover,
         .hero-link:last-child:hover {
             background: var(--turquoise);
             color: var(--white);
@@ -802,6 +804,12 @@
             font-size: 0.9rem;
             color: var(--white);
         }
+        
+        /* New version class matching copyright style */
+        .version {
+            font-size: 0.9rem;
+            color: var(--white);
+        }
 
         .footer-parrot {
             width: 120px;
@@ -1124,12 +1132,13 @@
                 <ul class="footer-list">
                     <li><span class="talavera-bullet"></span><span data-en="Phone:" data-es="Teléfono:">Phone:</span>
                         (928) 718-0018</li>
-                    <li><span class="talavera-bullet"></span>Email: hola@elpalacio.com</li>
+                    <li><span class="talavera-bullet"></span>Email: hola@elpalaciokingman.com</li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
             <p class="copyright">© 2026 El Palacio Mexican Restaurant. All rights reserved.</p>
+            <p class="version">Version 2.3</p>
         </div>
     </footer>
 
